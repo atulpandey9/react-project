@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaShower, FaSpa, FaPalette, FaCut } from "react-icons/fa";  
-import { GiRazor, GiHairStrands } from "react-icons/gi";  
+
 
 function Service_categories({ icon: Icon, title, text,index ,button}) {
   return (
