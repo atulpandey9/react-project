@@ -116,7 +116,7 @@ margin-right: 40px;
   background-color:#f7efef;
 }
 .container-2{
-  height: 1200px;
+  height: 1000px;
   width: 1088.38px;
   margin:0 355px 0 420px;
   padding: 0 15px;
@@ -137,7 +137,6 @@ margin-right: 40px;
   grid-template-columns: repeat(3,minmax(250px, 1fr));
   gap: 20px;
   padding: 40px 2px;
-
 }
 
 .grid-item {
@@ -149,7 +148,7 @@ margin-right: 40px;
 }
 .grid-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px #d4a373;;
 }
 .grid-item .icon {
   margin-bottom: 15px;
@@ -159,6 +158,7 @@ margin-right: 40px;
   height: 40px;
   width: 70px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .service-btn:hover{
 background-color: #d4af37 ;
@@ -171,26 +171,25 @@ transition: 1s;
 }
 .pricing-p{
   font-size: 16px;
-  margin: 15px 362.547px 55px 361.531px;
+  margin: 15px 362.547px 30px 300px;
 text-align: center;
 }
 .countainer-3{
   height: 1200px;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 335px;
-  background-color:transparent;
-}
+  width: 1029px;
+  padding: 0 15px 0px;
+  margin: 0 500px;
+  margin-right: 500px;
+  background-color:transparent;}
 .pricing-plan {
-  position: relative; 
+  position: relative;  
   min-height: 100vh;
   background: url("https://codewithsadee.github.io/barber/assets/images/pricing-bg.jpg")
     no-repeat center/cover;
   padding: 120px 0;
   color: white;
+  width: auto;
 }
-
-
 .pricing-plan::after {
   content: "";
   position: absolute;
@@ -201,9 +200,330 @@ text-align: center;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
-
-
 .pricing-plan > * {
   position: relative;
   z-index: 2;
+}
+.pricing-container {
+  height: auto; 
+  width: 1000px;
+  background-color: #fff;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Tabs */
+.pricing-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tab {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  color: #000000;
+}
+
+.tab:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tab .icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.tab.active {
+  background: #d4a373;
+  color: #000000;
+  border-color: #d4a373;
+}
+
+
+.pricing-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards */
+.pricing-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pricing-card:hover{
+   transform: translateY(-5px);
+  box-shadow: 0 5px 15px #d4a373;
+}
+
+.service-img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.service-info {
+  flex: 1; 
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.price {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+/* gallery-section */
+
+.gallery-section {
+  padding: 50px 10%;
+  background-color: white;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gallery-subtitle {
+  font-size: 1rem;
+  color: #666;
+  max-width: 500px;
+}
+
+.gallery-btn {
+  background-color: #d4a762;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-btn:hover {
+  background-color: #b3833d;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+    box-shadow: 0 5px 15px #d4a373;
+}
+/* Card container */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Card image */
+.gallery-card img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+/* Scale image slightly on hover */
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Show overlay on hover */
+.gallery-card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Content inside overlay */
+.card-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  background-color: #d4a762;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #b3833d;
+}
+
+/* appointment section */
+
+/* appointment section */
+.appointment-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.appointment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.img-cover {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.appointment-content {
+  flex: 2;
+  background-color: #d29a4b;
+  padding: 40px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-content h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.appointment-content p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.appointment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.appointment-form textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 100px;
+}
+
+.appointment-form input[type="date"] {
+  grid-column: span 2;
+}
+
+.appointment-btn {
+  grid-column: span 2;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  background: #c8872d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.appointment-btn:hover {
+  background: #a76c1f;
 }

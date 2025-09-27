@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Service from './Components/Service';
 import Pricing from './Components/Pricing';
+import Gallery from './Components/Gallery';
+import Appointment from './Appointment';
 function App(){
  return (
   <>
@@ -19,6 +21,15 @@ function App(){
 {/* pricing plans section */}
 <section className='pricing-plan'>
 <Pricing/>
+</section>
+
+{/* {gallery-section} */}
+<section className='gallery-section'>
+<Gallery/>
+</section>
+
+<section className='appointment-section'>
+<Appointment/>
 </section>
   </>
 );
