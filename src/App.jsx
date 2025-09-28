@@ -5,7 +5,8 @@ import Hero from './Components/Hero';
 import Service from './Components/Service';
 import Pricing from './Components/Pricing';
 import Gallery from './Components/Gallery';
-import Appointment from './Appointment';
+import Appointment from './Components/Appointment';
+import Footer from './Components/Footer';
 function App(){
  return (
   <>
@@ -27,10 +28,15 @@ function App(){
 <section className='gallery-section'>
 <Gallery/>
 </section>
-
+{/* appointment section */}
 <section className='appointment-section'>
 <Appointment/>
 </section>
+
+<footer className='foot-section'>
+  <Footer/>
+</footer>
+
   </>
 );
 }
